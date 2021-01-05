@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import {
   StyledGame,
@@ -5,6 +6,7 @@ import {
   StyledTimer,
   StyledCharacter,
 } from '../styled/Game';
+
 import { Strong } from '../styled/Random';
 
 export default function Game({ history }) {
