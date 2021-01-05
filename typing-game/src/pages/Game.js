@@ -7,6 +7,7 @@ import {
   StyledCharacter,
 } from '../styled/Game';
 
+
 import { Strong } from '../styled/Random';
 
 export default function Game({ history }) {
@@ -47,6 +48,14 @@ export default function Game({ history }) {
       history.push('gameOver');
     }
   }, [seconds, ms]);
+
+import { Strong } from '../styled/Random';
+
+export default function Game() {
+  const [score, setScore] = useState(0);
+
+  useEffect(() => {}, [score]);
+
   return (
     <StyledGame>
       <StyledScore>
