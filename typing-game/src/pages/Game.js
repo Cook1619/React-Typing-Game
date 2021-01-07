@@ -6,6 +6,7 @@ import {
   StyledCharacter,
 } from '../styled/Game';
 
+
 import { Strong } from '../styled/Random';
 
 export default function Game({ history }) {
@@ -45,6 +46,7 @@ export default function Game({ history }) {
     if (seconds <= -1) {
       history.push('gameOver');
     }
+<<<<<<< HEAD
   }, [seconds, ms, history]);
 
   const keyUpHandler = (e) => {
@@ -57,6 +59,16 @@ export default function Game({ history }) {
       document.removeEventListener('keyup', keyUpHandler);
     };
   }, []);
+=======
+  }, [seconds, ms]);
+
+import { Strong } from '../styled/Random';
+
+export default function Game() {
+  const [score, setScore] = useState(0);
+
+  useEffect(() => {}, [score]);
+>>>>>>> dev
 
   return (
     <StyledGame>
